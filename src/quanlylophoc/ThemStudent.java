@@ -7,18 +7,18 @@ public class ThemStudent {
         Scanner scanner= new Scanner(System.in);
         Student[] arrNew= new Student[arr.length+1];
         System.out.println("Nhập ID Của Học Sinh");
-        int id = scanner.nextInt();
+        int id = Integer.parseInt(scanner.nextLine());
         System.out.println(" Nhập Name của Học Sinh");
-        String name = scanner.next();
+        String name = scanner.nextLine();
         System.out.println(" Nhập Gender Của Học Sinh");
-        String gender = scanner.next();
+        String gender = scanner.nextLine();
         System.out.println("Nhập Age Của Học Sinh");
-        int age = scanner.nextInt();
+        int age = Integer.parseInt(scanner.nextLine());
         System.out.println("Nhập lớp của học sinh");
         System.out.println("Nhập ID của lớp ");
-        int idLop = scanner.nextInt();
+        int idLop = Integer.parseInt(scanner.nextLine());
         System.out.println("Nhập tên của lớp ");
-        String nameLop = scanner.next();
+        String nameLop = scanner.nextLine();
         Lop lop = new Lop(idLop, nameLop);
         Student student= new Student(id,name,gender,age,lop);
         for(int i=0;i< arr.length;i++){

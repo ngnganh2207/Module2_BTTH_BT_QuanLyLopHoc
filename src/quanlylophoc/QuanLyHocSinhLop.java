@@ -4,6 +4,10 @@ import java.net.SocketTimeoutException;
 import java.util.Scanner;
 
 public class QuanLyHocSinhLop {
+    //Đề Bài: Quản lý lớp học
+    //1. Class lớp có: 1.thêm; 2.show
+    //2. Student có: 1. Thêm, 2.Sửa, 3. Xóa , 4. show
+    //3. Exit
     public static void main(String[] args) {
         Scanner sc= new Scanner(System.in);
         Lop[] lops= new Lop[1];
